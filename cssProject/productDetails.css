@@ -302,6 +302,53 @@ img {
     border-radius: 24px;
 }
 
+.subscription {
+  height: 140px;
+  width: 93%;
+  margin: 30px auto;
+  border-radius: 18px;
+  background-color: #1b0a0a;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+}
+
+.subscription-text {
+  font-size: 24px;
+  font-weight: 900;
+  max-width: 400px;
+  line-height: 1.2;
+}
+
+.news-letter {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.news-letter input {
+  padding: 10px 14px;
+  border-radius: 25px;
+  border: none;
+  outline: none;
+  font-size: 14px;
+}
+
+.news-letter button {
+  padding: 10px 14px;
+  border-radius: 25px;
+  border: none;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.news-letter button:hover {
+  opacity: 0.9;
+}
+
 /* ================= MOBILE ================= */
 @media (max-width: 576px) {
 
@@ -374,6 +421,18 @@ img {
     .cartBtn {
         width: 100%;
     }
+
+    .subscription {
+        flex-direction: column;
+        gap: 12px;
+        height: auto;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .news-letter {
+        width: 100%;
+    }
 }
 
 /* ================= TABLET ================= */
@@ -405,5 +464,14 @@ img {
 
     .bigimg {
         max-width: 380px;
+    }
+
+    .subscription {
+        height: auto;
+        padding: 20px;
+    }
+
+    .news-letter {
+        width: 60%;
     }
 }
